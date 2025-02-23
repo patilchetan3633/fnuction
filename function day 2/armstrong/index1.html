@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function armstrong(n) {
+            let num = n;
+            let result = 0;
+            let count = 0;
+
+            while (num > 0) {
+                num = Math.floor(num / 10);
+                count++;
+            }
+            num = n;
+
+            for (let i = 1; i <= count; i++) {
+                let last = num % 10;
+                let mult = 1;
+                for (let j = 1; j <= count; j++) {
+                    mult = mult * last;
+
+                }
+                result = result + mult;
+                num = math.floor(num / 10);
+
+            }
+            if (n == result) {
+                document.write("this is aemstrong number");
+            }
+            else {
+                document.write("this is not armstrong number");
+            }
+            let x = prompt("enter the number");
+            let n = parseInt(x);
+            armstrong(n)
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
