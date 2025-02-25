@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function fact(n) {
+            if (n > 1) {
+                return n * fact(n - 1);
+            }
+            else {
+                return 1;
+            }
+        }
+
+        let x = prompt("Enter n : ");
+
+        let n = parseInt(x);
+
+        let ans = fact(n);
+
+        document.write("factorial of " + n + " is " + ans);
+    </script>
+
+</body>
+
+</html>

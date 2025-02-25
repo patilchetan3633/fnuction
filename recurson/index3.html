@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function print(n, end) {
+            if (n > end) {
+                return;
+            }
+            document.write(end + " ");
+            print(n, end - 1);
+        }
+
+
+        let x = prompt("Enter n : ");
+
+        let n = parseInt(x);
+
+        print(1, n);
+    </script>
+
+</body>
+
+</html>
